@@ -1,5 +1,5 @@
 ---
-title: What is the Subjective Color of Delph Blue: Unfalsifiable Understanding
+title: "What is the Subjective Color of Delph Blue: Unfalsifiable Understanding"
 tags: research, consciousness, methodology, chinese-room, turing-test, wild-data, epistemology
 ---
 
