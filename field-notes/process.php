@@ -17,10 +17,10 @@ require_once __DIR__ . '/config.php';
 
 // Security: only run from CLI or with correct key
 $is_cli = php_sapi_name() === 'cli';
-$has_key = isset($_GET['key']) && $_GET['key'] === 'process_2026';
+$has_key = isset($_GET['key']) && defined('PROCESS_KEY') && $_GET['key'] === PROCESS_KEY;
 
 if (!$is_cli && !$has_key) {
-    die("Access denied. Use CLI or provide ?key=process_2026");
+    die("Access denied. Use CLI or provide correct key.");
 }
 
 $incoming_dir = __DIR__ . '/incoming';
