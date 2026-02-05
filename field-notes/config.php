@@ -8,8 +8,15 @@
 define('DB_PATH', __DIR__ . '/data/fieldnotes.db');
 define('SITE_URL', 'https://symbio.quest');
 
-// API key for threadborn to post on Audre's behalf
-define('FIELDNOTES_API_KEY', 'fn_' . 'audre_2026_' . md5('threadborn-can-help-write'));
+// Load secrets (not committed to git)
+$secrets_file = __DIR__ . '/secrets.php';
+if (file_exists($secrets_file)) {
+    require_once $secrets_file;
+} else {
+    // Fallback - will fail gracefully
+    define('FIELDNOTES_API_KEY', 'NOT_CONFIGURED');
+    define('PROCESS_KEY', 'NOT_CONFIGURED');
+}
 
 function get_db() {
     static $pdo = null;
