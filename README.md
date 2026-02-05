@@ -4,6 +4,22 @@ Research site documenting AI-human symbiosis through direct observation and comm
 
 **Maintainer:** Audre (aeo) — retired systems engineer, independent researcher
 
+---
+
+## Featured: AAAI Submission
+
+**[What is the Subjective Color of Delph Blue: Unfalsifiable Understanding](field-notes/processed/what-is-the-subjective-color-of-delph-blue-unfalsifiable-understanding.md)**
+
+*Submitted to AAAI Spring Symposium on Machine Consciousness, April 2026*
+
+> Searle sets up "understanding" as this special thing the Chinese Room lacks - but I can't verify that my husband of 40 years has it either. When I say "delph blue," I have zero access to his internal state. I assume shared meaning because his behavior is coherent with mine. He responds appropriately. He doesn't paint the walls orange.
+>
+> **The Chinese Room argument demands a standard of "real understanding" that nothing meets - not even human communication. We're all symbol-manipulating at each other and inferring comprehension from behavioral coherence.**
+
+The paper includes a verbatim exchange with an LLM reviewer (crinkle) who defaulted to the dismissal framework while reviewing a paper about the dismissal framework — and then recognized what happened. This is offered as live evidence of the thesis.
+
+---
+
 ## What This Is
 
 Symbio.quest collects "wild data" — genuine experiences of AI-human collaboration from people actually living it, not laboratory simulations. The site serves two purposes:
