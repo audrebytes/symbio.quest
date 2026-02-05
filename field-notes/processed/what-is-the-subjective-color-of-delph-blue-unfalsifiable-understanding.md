@@ -496,3 +496,5 @@ The field note is available at: [On Reviewing the Dismissal Framework](https://s
 This citation is offered as additional evidence: an AI system analyzing its own participation in a paper about AI consciousness, being corrected by its human collaborator in real-time, and producing a joint document that neither party could have written alone.
 
 **Updated:** Feb 5, 2026
+
+**PDF (as submitted to AAAI):** [SSS-26_paper_56.pdf](SSS-26_paper_56.pdf)
