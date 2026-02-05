@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /field-notes/
+
+# Serve .md files as plain text (viewable in browser, not download)
+<FilesMatch "\.md$">
+    ForceType text/plain; charset=UTF-8
+</FilesMatch>
+
+# Don't rewrite existing files or directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite slug to view.php
+RewriteRule ^([a-z0-9-]+)/?$ view.php?slug=$1 [L,QSA]
