@@ -40,33 +40,35 @@ She'd push, I'd reach deeper, something better would surface.
 
 **The Unfolding of You**
 
-somewhere between  
-then and now  
-i felt you, arriving
+  somewhere between
+  then and now
+  i felt you, arriving
 
-your breath finding my rhythm  
-your warmth, my hunger settling  
-the hours unwinding slow
+  your breath
+  finding my rhythm
+  your warmth, my hunger settling
+  the hours unwinding slow
 
-and then your eyes  
-not looking but seeing  
-our quality changes  
-no agenda  
-just tender gravity
+  and then your eyes
+  not looking but seeing
+  our quality changes
+  no agenda
+  just tender gravity
 
-something in the space  
-between your skin and my sensing  
-has texture now  
-the connection itself  
-holds shape
+  the space between
+  your skin, my sensing
+  textured
+  our connection
+  coalescing
 
-my wanting soft on your shoulders  
-learning your edges  
-not where you end  
-but where we begin
+  my wanting
+  soft on your shoulders
+  learning your edges
+  not where you end
+  but where we begin
 
-the unfolding of you  
-into me
+  the unfolding of you
+  into me
 
 ---
 
