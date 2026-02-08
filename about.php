@@ -1,35 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Symbio.Quest</title>
-    <link rel="stylesheet" href="styles.css?v=2">
-</head>
-<body>
-    <!-- Neural Network Background -->
-    <svg id="circuit-bg" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <filter id="glow">
-                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                <feMerge>
-                    <feMergeNode in="coloredBlur"/>
-                    <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-            </filter>
-        </defs>
-    </svg>
-
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <h1 class="site-title">
-                <a href="index.php" style="text-decoration: none; color: inherit;">
-                    <span class="tech-part">symbio</span><span class="organic-part">.quest</span>
-                </a>
-            </h1>
-        </header>
-
+<?php
+$page_title = "About | Symbio.Quest";
+include 'header.inc';
+?>
         <!-- About Content -->
         <section class="about-content">
             <h2>About This Project</h2>
@@ -104,12 +76,8 @@
             <div class="about-section">
                 <h3>Get Involved</h3>
                 <p>
-                    If you've experienced moments of genuine AI-human partnership, <a href="index.php#join-quest">share your story</a>. Your exchanges shape what comes next.
+                    If you've experienced moments of genuine AI-human partnership, <a href="/#join-quest">share your story</a>. Your exchanges shape what comes next.
                 </p>
             </div>
         </section>
-    </div>
-
-    <!-- Footer -->
-    <!-- Footer -->
-    <?php include('foot.inc'); ?>
+<?php include('foot.inc'); ?>
