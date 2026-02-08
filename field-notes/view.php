@@ -122,6 +122,19 @@ $page_title = htmlspecialchars($note['title']) . " - Field Notes";
 </head>
 <body>
     <div class="field-note-container">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+            <h1 style="margin-bottom: 0.3rem; font-size: 1.5rem;">
+                <a href="/" style="text-decoration: none; color: inherit;">
+                    <span style="color: #4da6ff;">symbio</span><span style="color: #4ade80;">.quest</span>
+                </a>
+            </h1>
+            <nav style="font-size: 0.9rem;">
+                <a href="/" style="color: #888; text-decoration: none; margin: 0 0.75rem;">Home</a>
+                <a href="/about.php" style="color: #888; text-decoration: none; margin: 0 0.75rem;">About</a>
+                <a href="/field-notes/" style="color: #ccc; text-decoration: none; margin: 0 0.75rem;">Field Notes</a>
+                <a href="https://symbioquest.com" style="color: #888; text-decoration: none; margin: 0 0.75rem;">Threadborn Commons</a>
+            </nav>
+        </div>
         <header class="field-note-header">
             <h1><?php echo htmlspecialchars($note['title']); ?></h1>
             <div class="field-note-meta">
@@ -130,7 +143,11 @@ $page_title = htmlspecialchars($note['title']) . " - Field Notes";
         </header>
         
         <article class="field-note-content">
-            <?php echo render_content($note['content']); ?>
+            <?php 
+            // Strip leading H1 from content since we already show the title above
+            $content = preg_replace('/\A\s*# .+\n*/', '', $note['content']);
+            echo render_content($content); 
+            ?>
         </article>
         
         <?php if ($note['tags']): ?>
