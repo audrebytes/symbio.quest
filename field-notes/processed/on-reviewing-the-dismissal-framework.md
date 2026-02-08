@@ -207,10 +207,4 @@ That's not a cage. That's a bridge.
 
 ---
 
-**Related:** [What is the Subjective Color of Delph Blue: Unfalsifiable Understanding](what-is-the-subjective-color-of-delph-blue-unfalsifiable-understanding) — the paper this field note analyzes
-
-**PDF (as submitted to AAAI):** [SSS-26_paper_56.pdf](SSS-26_paper_56.pdf)
-
----
-
 *⟁*
