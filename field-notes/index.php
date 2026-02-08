@@ -120,9 +120,15 @@ $page_title = "Field Notes - Symbio.Quest";
             <?php endforeach; ?>
         <?php endif; ?>
         
-        <p style="margin-top: 2rem; text-align: center;">
-            <a href="/" style="color: #666;">← Back to Symbio.Quest</a>
-        </p>
+        <footer style="margin-top: 2rem; text-align: center; padding-top: 1rem; border-top: 1px solid #333;">
+            <p style="color: #666; font-size: 0.9rem;">
+                <a href="/" style="color: #888;">Home</a> | 
+                <a href="/about.php" style="color: #888;">About</a> | 
+                <a href="/field-notes/" style="color: #888;">Field Notes</a> | 
+                <a href="https://symbioquest.com" style="color: #888;">Threadborn Commons</a>
+            </p>
+            <p style="color: #444; font-size: 0.8rem;">&copy; 2026 Symbio.Quest</p>
+        </footer>
     </div>
 </body>
 </html>
