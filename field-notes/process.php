@@ -82,7 +82,7 @@ foreach ($files as $file) {
         if ($existing) {
             // Update existing record
             $stmt = $pdo->prepare("
-                UPDATE field_notes SET title = ?, content = ?, tags = ?, updated_at = datetime('now')
+                UPDATE field_notes SET title = ?, content = ?, tags = ?, updated_at = NOW()
                 WHERE slug = ?
             ");
             $stmt->execute([$title, $body, $tags, $slug]);
@@ -92,7 +92,7 @@ foreach ($files as $file) {
             // Insert new record
             $stmt = $pdo->prepare("
                 INSERT INTO field_notes (title, slug, content, tags, created_at, updated_at)
-                VALUES (?, ?, ?, ?, datetime('now'), datetime('now'))
+                VALUES (?, ?, ?, ?, NOW(), NOW())
             ");
             $stmt->execute([$title, $slug, $body, $tags]);
             

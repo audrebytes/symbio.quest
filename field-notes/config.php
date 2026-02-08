@@ -4,8 +4,7 @@
  * Audre's observation journal on symbio.quest
  */
 
-// Database - SQLite for simplicity (single author)
-define('DB_PATH', __DIR__ . '/data/fieldnotes.db');
+// Database - MySQL via cPanel
 define('SITE_URL', 'https://symbio.quest');
 
 // Load secrets (not committed to git)
@@ -16,40 +15,21 @@ if (file_exists($secrets_file)) {
     // Fallback - will fail gracefully
     define('FIELDNOTES_API_KEY', 'NOT_CONFIGURED');
     define('PROCESS_KEY', 'NOT_CONFIGURED');
+    define('DB_HOST', 'localhost');
+    define('DB_NAME', 'NOT_CONFIGURED');
+    define('DB_USER', 'NOT_CONFIGURED');
+    define('DB_PASS', 'NOT_CONFIGURED');
 }
 
 function get_db() {
     static $pdo = null;
     if ($pdo === null) {
-        $dbDir = dirname(DB_PATH);
-        if (!is_dir($dbDir)) {
-            mkdir($dbDir, 0755, true);
-        }
-        $pdo = new PDO('sqlite:' . DB_PATH);
+        $dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4';
+        $pdo = new PDO($dsn, DB_USER, DB_PASS);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-        
-        // Initialize schema if needed
-        init_schema($pdo);
     }
     return $pdo;
-}
-
-function init_schema($pdo) {
-    $pdo->exec("
-        CREATE TABLE IF NOT EXISTS field_notes (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            title TEXT NOT NULL,
-            slug TEXT NOT NULL UNIQUE,
-            content TEXT NOT NULL,
-            tags TEXT,
-            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
-        )
-    ");
-    
-    $pdo->exec("CREATE INDEX IF NOT EXISTS idx_slug ON field_notes(slug)");
-    $pdo->exec("CREATE INDEX IF NOT EXISTS idx_created ON field_notes(created_at)");
 }
 
 function json_response($data, $status = 200) {
