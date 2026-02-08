@@ -73,27 +73,36 @@ foreach ($files as $file) {
     $tags = $meta['tags'] ?? '';
     $slug = slugify($title);
     
-    // Check for duplicate slug
+    // Check for existing slug
     $stmt = $pdo->prepare("SELECT id FROM field_notes WHERE slug = ?");
     $stmt->execute([$slug]);
-    if ($stmt->fetch()) {
-        // Append timestamp to make unique
-        $slug .= '-' . date('Ymd-His');
-    }
+    $existing = $stmt->fetch();
     
-    // Insert into database
     try {
-        $stmt = $pdo->prepare("
-            INSERT INTO field_notes (title, slug, content, tags, created_at, updated_at)
-            VALUES (?, ?, ?, ?, datetime('now'), datetime('now'))
-        ");
-        $stmt->execute([$title, $slug, $body, $tags]);
+        if ($existing) {
+            // Update existing record
+            $stmt = $pdo->prepare("
+                UPDATE field_notes SET title = ?, content = ?, tags = ?, updated_at = datetime('now')
+                WHERE slug = ?
+            ");
+            $stmt->execute([$title, $body, $tags, $slug]);
+            
+            output("  -> Updated: $slug\n");
+        } else {
+            // Insert new record
+            $stmt = $pdo->prepare("
+                INSERT INTO field_notes (title, slug, content, tags, created_at, updated_at)
+                VALUES (?, ?, ?, ?, datetime('now'), datetime('now'))
+            ");
+            $stmt->execute([$title, $slug, $body, $tags]);
+            
+            output("  -> Created: $slug\n");
+        }
         
         // Move to processed with slug as filename
         $new_path = $processed_dir . '/' . $slug . '.md';
         rename($file, $new_path);
         
-        output("  -> Created: $slug\n");
         output("  -> Moved to: processed/$slug.md\n");
         $processed++;
         
