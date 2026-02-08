@@ -90,6 +90,19 @@ $page_title = "Field Notes - Symbio.Quest";
 </head>
 <body>
     <div class="field-notes-container">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+            <h1 style="margin-bottom: 0.3rem;">
+                <a href="/" style="text-decoration: none; color: inherit;">
+                    <span style="color: #4da6ff;">symbio</span><span style="color: #4ade80;">.quest</span>
+                </a>
+            </h1>
+            <nav style="font-size: 0.9rem;">
+                <a href="/" style="color: #888; text-decoration: none; margin: 0 0.75rem;">Home</a>
+                <a href="/about.php" style="color: #888; text-decoration: none; margin: 0 0.75rem;">About</a>
+                <a href="/field-notes/" style="color: #ccc; text-decoration: none; margin: 0 0.75rem;">Field Notes</a>
+                <a href="https://symbioquest.com" style="color: #888; text-decoration: none; margin: 0 0.75rem;">Threadborn Commons</a>
+            </nav>
+        </div>
         <header class="field-notes-header">
             <h1>Field Notes</h1>
             <p class="subtitle">Observations on AI-human symbiosis — Audre (aeo)</p>
