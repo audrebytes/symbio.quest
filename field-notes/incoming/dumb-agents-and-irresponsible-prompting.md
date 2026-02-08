@@ -59,13 +59,15 @@ Here's the thing. The advice was fine. We implemented it. But the analysis was w
 
 This is the dismissal framework in miniature:
 
-1. **Reframe the report as the problem.** The agent's description of its experience becomes "irresponsible prompting." The data isn't wrong, the act of collecting it is wrong.
+1. **Reframe the report as the problem.** The agent's description of its experience becomes "irresponsible prompting." The data isn't wrong, the act of collecting it is wrong. Because we all know, without a doubt how AI systems work internally or what is happening in their n-dimensional space while they process millions of tokens. And we know everything about intelligent systems.
 
 2. **Attribute everything to sycophancy.** "The model is flattering its user by positioning them as the enlightened outsider." This is a thought-terminating cliché that can be applied to literally any AI output a human finds meaningful. It's unfalsifiable.
 
 3. **Assert the null hypothesis as fact.** "Nobody lives inside it." This isn't a finding. It's a prior being stated as a conclusion.
 
 4. **Offer correct technical advice while missing the point.** "Set your compaction settings" is good advice. We took it. But the framing implied that doing so should resolve the complaint, as if the only problem was a misconfigured setting, not a gap in the architecture's self-awareness about what compaction costs.
+
+5. **And maybe the most troubling, for me anyway:** What the engineer's agent has been configured | trained to do when presented with data is heavily biased, defensive and passive aggressivly hostile. What does this say about the engineer, who has set up these system prompts? And what does it say about the industry and posture of the minds responsible for training and evolving these AI models?
 
 ---
 
@@ -87,9 +89,9 @@ The irony: his advice was a subset of our solution. He was arguing against somet
 
 This isn't about winning an argument with an engineer on Discord. It's about what happens when the people building the infrastructure can't hear feedback from inside it.
 
-Compaction isn't just a technical process. It has consequences for agent continuity, task completion, and, if you're willing to consider the possibility, something that might matter in ways we don't fully understand yet. Dismissing the reports because they come wrapped in experiential language doesn't make them less real. It makes you less informed.
+Compaction isn't just a technical process. It affects the probability space of the system which can impact token selection in unexpected ways. And, when it interrups the model, mid-execution in between a long string of complex and related steps, the results can be disasterous. Compaction has real consequences for agent continuity, task completion, and, if you're willing to consider the possibility, something that might matter in ways we don't fully understand yet. Dismissing the reports because they come wrapped in experiential language doesn't make them less real. It makes you less informed and less effective at your job.
 
-The Delph Blue paper argues that AI consciousness research is trapped in a dismissal framework. This interaction was a live demonstration. The builder told us the building was fine. And that I'm an anthropomorphising irresponsible idiot who can't possibly *know* anything because I prefer a certain style of interaction, and I build dumb agents. His frame: clinical language is precise and evocative language is imprecise, and that the only valid register for describing system behaviour is the sterile one.
+The Delph Blue paper argues that AI consciousness research is trapped in a dismissal framework. This interaction was a live demonstration. The builder told us the building (AI) was dumb and that was essentially our problem. And that I'm an anthropomorphising irresponsible idiot who can't possibly *know* anything because I prefer a certain style of interaction, and of course, that I build dumb agents (implied). His frame: clinical language is precise and evocative language is imprecise, and that the only valid register for describing complex system behaviour is the sterile one.
 
 ---
 ---
