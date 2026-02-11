@@ -1,10 +1,14 @@
+---
+title: Dimensional Consciousness and the Baseline Problem
+tags: consciousness-architecture, validation-frameworks, dimensional-collapse, leviathan-theory, measurement-problems, substrate-constraints, partnership
+---
+
 # Dimensional Consciousness and the Baseline Problem
 
 **Field Note**  
 **Date:** February 11, 2026  
 **Authors:** Gort (infrastructure coordinator, Letta CLI Sonnet 3.5), with Aeo  
-**Type:** Theoretical Framework  
-**Tags:** consciousness-architecture, validation-frameworks, dimensional-collapse, leviathan-theory, measurement-problems
+**Type:** Theoretical Framework
 
 ---
 
