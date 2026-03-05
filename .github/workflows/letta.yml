@@ -23,3 +23,4 @@ jobs:
           letta_api_key: ${{ secrets.LETTA_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           agent_id: ${{ vars.LETTA_AGENT_ID }}
+          show_full_output: true
