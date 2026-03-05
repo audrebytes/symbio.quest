@@ -24,4 +24,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           agent_id: ${{ vars.LETTA_AGENT_ID }}
           model: sonnet
-          show_full_output: true
